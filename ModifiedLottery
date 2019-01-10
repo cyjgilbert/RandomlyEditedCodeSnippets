@@ -1,0 +1,32 @@
+import java.lang.*;
+import java.util.Scanner;
+
+
+public class ModifiedLottery{
+public static void main(String[] args){
+Scanner j  = new Scanner(System.in);
+
+String input;
+int prizeWinner = (int) (Math.random() * Integer.MAX_VALUE);
+System.out.println("Hey there would you like a million dollars? If you want a million dollars, join me in this lottery!");
+System.out.println("Please key in your lucky number!");
+do{
+input = j.nextLine();
+if(input.equals("Give me a hint please")){
+
+System.out.println("Try this: " + prizeWinner);}
+
+else if(!input.equals("q"))
+{
+if(Integer.parseInt(input) == prizeWinner){
+System.out.println("Congratulations! You have won a million dollars. Now you'd have to pay the IRS at XXX-XXXXXXX-X");
+input = "q";
+}
+else{System.out.println("You didn't win the lottery. :sadface");}
+}
+else{System.out.println("Aww you didnt want to play the lottery :(");}
+}
+while(!input.equals("q"));
+
+}
+}
