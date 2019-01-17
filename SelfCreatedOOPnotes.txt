@@ -1,0 +1,79 @@
+/*
+for oop
+you need a object class 
+say public class Mouse for example- 
+and you need another object class driver
+say public class MouseDriver for example
+
+think of oop as object oriented program in the sense 
+an object has state ( current condition) and methods ( to access that condition)
+
+A mouse (object) for example has height, weight, growth rate ( current state)
+and there are methods to change that like setPercentGrowthRate ( methods)
+to set the rate at which the growth rate changes 
+
+in the mouse class, you first define its states and methods
+
+private type <state-name>; and assign a value
+
+and
+
+public void <method-name>(<type> <parameter-name>)
+{
+ this.<state-name> = <state-name>;
+}
+
+for the class - input the variables, and define the methods
+
+the methods in the class can only states with this.<state> = something
+either inbuilt classes or
+for the driver - input the parameters,define the objects and then call the objects
+
+/* the method you use
+
+*/
+
+
+and typically with an oop class you want to make everything private, that is to only allow the user 
+to access things within it without need to know how it functions
+
+so,
+
+private <type> <variable-name>;
+then give it an initial value ( or not ) depending on situation
+
+then set the methods to do stuff, such as printing mouse age and weight,
+simluate one day or growth, etc
+
+public void <method>(<type> <parameter>)
+{
+this.parameter = <something>
+}
+
+
+
+
+in the mousedriver class, after public class and main , you define the variables
+
+<type> <parameter that method will influence-reference variable>
+or
+<Object> <reference variable> = new <Object>();
+
+the reason for (); is to call the various methods that are associated with the
+object
+
+there must be variables defined first so that scanner can take input form user
+which directs to the variable
+
+aka growthRate  = stdln.nextDouble();
+which also means that the type of growthrate is a double
+
+into the parameters of the methods of the object
+
+so when one uses it, it becomes
+<reference-variable>.<methods in class>(<parameter>);
+
+or if  the methods in class do not take in a parameter
+ then just <reference-variable>.<methods>();
+ 
+*/
